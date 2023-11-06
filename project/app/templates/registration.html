@@ -11,6 +11,18 @@
     <title>Hello, world!</title>
   </head>
   <body>
+  {% for msg in messages %}
+    <div class="col-md-10">
+        
+        <div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Well done!</h4>
+  <p>{{ msg }}</p>
+  <hr>
+</div>
+
+
+    </div>
+            {% endfor%}
     <div class="container">
         
         <form action="" method="post">
@@ -21,11 +33,11 @@
         </form>
 
         <br>
-        {% for msg in messages %}
+      
 
-        {{ msg }}
+      
 
-        {% endfor%}
+
    
 
 
