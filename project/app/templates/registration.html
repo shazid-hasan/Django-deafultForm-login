@@ -12,12 +12,22 @@
   </head>
   <body>
     <div class="container">
+        
         <form action="" method="post">
             {% csrf_token %}
             {{user_form.as_p}}
             <button type="submit" class="btn btn-lg btn-success">Submit</button>
 
         </form>
+
+        <br>
+        {% for msg in messages %}
+
+        {{ msg }}
+
+        {% endfor%}
+   
+
 
     </div>
 
